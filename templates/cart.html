@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Your Shopping Cart</h1>
+
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="mb-4 p-3 rounded-md {% if category == 'error' %}bg-red-200 text-red-700{% else %}bg-green-200 text-green-700{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% if cart_items %}
+            <div class="bg-white shadow-md rounded-lg p-4">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="p-3">Product</th>
+                            <th class="p-3">Price</th>
+                            <th class="p-3">Quantity</th>
+                            <th class="p-3">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for product_id, item in cart_items.items() %}
+                        <tr class="border-t">
+                            <td class="p-3">{{ item.name }}</td>
+                            <td class="p-3 text-green-600 font-semibold">₹{{ item.price }}</td>
+                            <td class="p-3">{{ item.quantity }}</td>
+                            <td class="p-3">
+                                <a href="{{ url_for('update_cart', product_id=product_id, action='increase') }}" 
+                                   class="px-2 py-1 bg-blue-500 text-white rounded-md">+</a>
+                                <a href="{{ url_for('update_cart', product_id=product_id, action='decrease') }}" 
+                                   class="px-2 py-1 bg-yellow-500 text-white rounded-md">-</a>
+                                <a href="{{ url_for('update_cart', product_id=product_id, action='remove') }}" 
+                                   class="px-2 py-1 bg-red-500 text-white rounded-md">Remove</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    
+                    <!-- Total Price Row -->
+                    <tfoot>
+                        <tr class="bg-gray-200 font-bold">
+                            <td class="p-3 text-right" colspan="2">Total Price:</td>
+                            <td class="p-3 text-green-600">₹{{ total_price }}</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                    
+                </table>
+            </div>
+
+            <!-- Checkout Form -->
+            <div class="bg-white shadow-md rounded-lg p-6 mt-6">
+                <h3 class="text-xl font-semibold mb-4">Enter Shipping Details</h3>
+                <form action="{{ url_for('buy_now') }}" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium">Full Name</label>
+                        <input type="text" id="name" name="name" required 
+                               class="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="address" class="block text-gray-700 font-medium">Shipping Address</label>
+                        <textarea id="address" name="address" required 
+                                  class="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label for="phone" class="block text-gray-700 font-medium">Phone</label>
+                        <input type="text" id="phone" name="phone" required 
+                               class="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="pincode" class="block text-gray-700 font-medium">Pincode</label>
+                        <input type="text" id="pincode" name="pincode" required 
+                               class="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">
+                        Buy Now
+                    </button>
+                </form>
+            </div>
+        {% else %}
+            <p class="text-center text-gray-600 mt-6">Your cart is empty.</p>
+        {% endif %}
+
+        <!-- Continue Shopping Button -->
+        <div class="text-center mt-6">
+            <a href="{{ url_for('home') }}" 
+               class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition">
+                Continue Shopping
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
