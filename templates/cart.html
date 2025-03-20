@@ -37,7 +37,7 @@
                         {% for product_id, item in cart_items.items() %}
                         <tr class="border-t">
                             <td class="p-3">{{ item.name }}</td>
-                            <td class="p-3 text-green-600 font-semibold">₹{{ item.price }}</td>
+                            <td class="p-3 text-green-600 font-semibold">${{ item.price }}</td>
                             <td class="p-3">{{ item.quantity }}</td>
                             <td class="p-3">
                                 <a href="{{ url_for('update_cart', product_id=product_id, action='increase') }}" 
