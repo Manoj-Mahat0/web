@@ -11,7 +11,7 @@ products = [
     {
         "id": 1,
         "name": "iPhone 16",
-        "price": 73400,
+        "price": 734,
         "image": "https://m.media-amazon.com/images/I/71CSc3M2AGL.AC_UY327_FMwebp_QL65.jpg",
         "description": "Craftsmanship: Apple's iPhone 16 continues the legacy of precision engineering, featuring an aerospace-grade aluminum or titanium frame with a sleek, minimalist design.\nMaterial: Crafted with a durable Ceramic Shield front and back, offering enhanced scratch and drop resistance. The display uses a Super Retina XDR panel with ProMotion for ultra-smooth visuals.\nUniqueness: Equipped with the latest A18 Bionic chip, advanced AI-powered photography, and a longer-lasting battery. iOS ecosystem integration ensures seamless connectivity across Apple devices.",
         "rating": 4.5
@@ -19,7 +19,7 @@ products = [
     {
         "id": 2,
         "name": "MacBook Air M1",
-        "price": 69400,
+        "price": 694,
         "image": "https://m.media-amazon.com/images/I/71jG+e7roXL.AC_UY327_FMwebp_QL65.jpg",
         "description": "Craftsmanship: Designed for portability and performance, the MacBook Air M1 is incredibly thin and lightweight while maintaining a robust unibody aluminum chassis.\nMaterial: High-quality recycled aluminum for a premium and eco-friendly build, complemented by a Retina display with True Tone technology.\nUniqueness: The M1 chip revolutionizes speed and efficiency, offering up to 18 hours of battery life. Silent, fanless cooling and macOS optimization ensure a seamless user experience.",
         "rating": 4.8
@@ -27,7 +27,7 @@ products = [
     {
         "id": 3,
         "name": "Samsung Galaxy Watch",
-        "price": 50000,
+        "price": 500,
         "image": "https://m.media-amazon.com/images/I/71elbYR1eEL.AC_UY327_FMwebp_QL65.jpg",
         "description": "Craftsmanship: A sleek, ergonomic smartwatch with a stainless steel or aluminum casing, paired with a comfortable silicone or leather strap.\nMaterial: Corning Gorilla Glass DX+ for scratch-resistant protection, high-quality AMOLED display for vibrant colors, and water resistance up to 5ATM.\nUniqueness: Advanced health tracking, ECG monitoring, and seamless Samsung ecosystem integration make it the perfect fitness and lifestyle companion.",
         "rating": 4.3
@@ -35,7 +35,7 @@ products = [
     {
         "id": 4,
         "name": "Boat Rockerz 450",
-        "price": 1400,
+        "price": 14,
         "image": "https://m.media-amazon.com/images/I/51FNnHjzhQL.AC_UY327_FMwebp_QL65.jpg",
         "description": "Craftsmanship: Stylish and lightweight over-ear headphones with a comfortable, cushioned headband and foldable design for portability.\nMaterial: High-grade plastic and premium foam ear cushions for extended wear. Durable, sweat-resistant coating for long-lasting use.\nUniqueness: Immersive sound with 40mm dynamic drivers, up to 15 hours of battery life, and dual connectivity (Bluetooth & AUX).",
         "rating": 4.6
@@ -43,7 +43,7 @@ products = [
     {
         "id": 5,
         "name": "SONY PS5",
-        "price": 55900,
+        "price": 559,
         "image": "https://m.media-amazon.com/images/I/51QoWUMybjL.AC_UY327_FMwebp_QL65.jpg",
         "description": "Craftsmanship: A futuristic, aerodynamic design with a two-tone finish and customizable faceplates for a unique aesthetic.\nMaterial: High-quality plastic and metal construction, with an advanced cooling system and a powerful AMD Ryzen processor.\nUniqueness: Supports ray tracing for ultra-realistic graphics, an ultra-fast SSD for near-instant loading, and a revolutionary DualSense controller with adaptive triggers and haptic feedback.",
         "rating": 4.9
@@ -51,7 +51,7 @@ products = [
     {
         "id": 6,
         "name": "SONY 4K Smart TV",
-        "price": 90400,
+        "price": 904,
         "image": "https://m.media-amazon.com/images/I/81BENnbPpuL.AC_UY327_FMwebp_QL65.jpg",
         "description": "Craftsmanship: A sleek, bezel-less design that maximizes screen-to-body ratio for an immersive viewing experience.\nMaterial: Premium metal frame with an anti-glare coating, high-dynamic range (HDR) display, and Dolby Vision support.\nUniqueness: Powered by the X1 Ultimate Processor for stunning clarity, MotionFlow technology for smooth visuals, and Android TV OS for smart connectivity.",
         "rating": 4.7
@@ -59,7 +59,7 @@ products = [
     {
         "id": 7,
         "name": "JBL Bluetooth Speaker",
-        "price": 20400,
+        "price": 204,
         "image": "https://m.media-amazon.com/images/I/51waOv47fqL.AC_UY327_FMwebp_QL65.jpg",
         "description": "Craftsmanship: A compact yet robust cylindrical or boxy design, built for portability and durability.\nMaterial: IP67-rated waterproof and dustproof body with a rubberized grip for shock resistance. High-performance fabric covering for premium aesthetics.\nUniqueness: Signature JBL bass, 360-degree sound, up to 20 hours of battery life, and PartyBoost pairing for stereo sound.",
         "rating": 4.4
@@ -67,7 +67,7 @@ products = [
     {
         "id": 8,
         "name": "Canon DSLR Camera",
-        "price": 40000,
+        "price": 400,
         "image": "https://m.media-amazon.com/images/I/914hFeTU2-L.AC_UY327_FMwebp_QL65.jpg",
         "description": "Craftsmanship: A professional-grade camera with an ergonomic grip, tactile control buttons, and a durable yet lightweight magnesium alloy body.\nMaterial: Weather-sealed construction for protection against dust and moisture, high-resolution LCD touchscreen, and precision glass optics.\nUniqueness: Advanced image processing, ultra-fast autofocus, 4K video recording, and interchangeable lenses for creative flexibility.",
         "rating": 4.8
@@ -75,7 +75,7 @@ products = [
     {
         "id": 9,
         "name": "Mi Fitness Tracker",
-        "price": 2000,
+        "price": 20,
         "image": "https://m.media-amazon.com/images/I/61EclBYcocL.AC_UY327_FMwebp_QL65.jpg",
         "description": "Craftsmanship: A sleek and ultra-lightweight fitness band with a curved display and smooth silicone strap for all-day comfort.\nMaterial: Durable polycarbonate and scratch-resistant glass, with water resistance up to 50 meters.\nUniqueness: AI-powered health tracking, real-time heart rate monitoring, SpO2 measurement, and long battery life of up to 14 days.",
         "rating": 4.2
@@ -83,7 +83,7 @@ products = [
     {
         "id": 10,
         "name": "Philips Robot Vacuum",
-        "price": 5000,
+        "price": 50,
         "image": "https://m.media-amazon.com/images/I/51el3Rs8whL.SX679.jpg",
         "description": "Craftsmanship: A compact, circular design with a slim profile, allowing it to navigate under furniture and tight spaces.\nMaterial: High-quality plastic and metal construction with anti-collision sensors and durable rubberized wheels.\nUniqueness: Intelligent mapping, automated scheduling, high-suction power, and voice assistant compatibility for hands-free cleaning.",
         "rating": 4.6
